@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Polyline Drawer & Encoder</title>
+
+  <link rel="stylesheet" href="polystyle.css">
+</head>
+
+<body>
+
+<div id="container">
+
+  <div id="mapContainer">
+    <div id="map"></div>
+    <div id="zoomLabel">Zoom: --</div>
+  </div>
+
+  <div id="editor">
+    <div class="row">
+      <div class="controls">
+			<button id="newPoly">New Poly</button>
+			<button id="undoPoly">Undo</button>
+			<button id="clearPolys" class="secondary">Clear Polys</button>
+			<button id="encodeBtn">Encode</button>
+			<button id="addPoly">Add Poly</button>
+      <button id="loadIndia">Load India Border</button>
+      </div>
+    </div>
+
+    <textarea id="coords" placeholder="Click on map or paste coordinates (lat, lng)"></textarea>
+    <textarea id="encoded" placeholder="Encoded polyline will appear here or paste encoded text to draw"></textarea>
+
+  </div>
+</div>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZoDjn7QZsPGowr0vMZoD_Sk38r2bS6xk&callback=initMap" async defer></script>
+
+<script src="Polyscript.js" defer></script>
+
+</body>
+</html>
